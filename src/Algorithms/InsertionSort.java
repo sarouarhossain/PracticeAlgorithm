@@ -3,8 +3,8 @@ package Algorithms;
 /**
  * Created by sarou on 4/21/2018.
  */
-public class SelectionSort {
-    public static int[] doSelectionSort(int[] arrayToSort){
+public class InsertionSort {
+    public static int[] doInsertionSort(int[] arrayToSort){
         int sizeOfArray = arrayToSort.length;
         for (int unsortedIndex = 1; unsortedIndex < sizeOfArray; unsortedIndex++){
             int newElement = arrayToSort[unsortedIndex];
