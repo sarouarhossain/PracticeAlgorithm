@@ -1,5 +1,6 @@
 import Algorithms.*;
 import Recursion.BasicRecursion;
+import Recursion.EuclidianGCD;
 import Recursion.Factorial;
 
 /**
@@ -22,10 +23,10 @@ public class Test {
         checkInsertion.showReturnData ();
         checkShell.showReturnData (); */
 
-        Factorial fct = new Factorial();
+        EuclidianGCD gcd = new EuclidianGCD();
 
-        System.out.println(fct.factorial(4));
-        System.out.println(fct.callBetterFactorial(4));
+        System.out.println(gcd.gcdRecursive(15,9));
+        System.out.println(gcd.gcdIterative(15,9));
 
     }
 }
