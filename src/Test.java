@@ -1,4 +1,6 @@
 import Algorithms.*;
+import Recursion.BasicRecursion;
+import Recursion.Factorial;
 
 /**
  * Created by sarou on 4/21/2018.
@@ -10,7 +12,7 @@ public class Test {
         int[] testData1 = {-22, -15, 1, 1, 7, 20, 35, 55};
         int[] testData2 = {55, 35, 20, 7, 1, 1, -15, -22};
 
-        ReturnData checkBubble = BubbleSort.doBubbleSort (testData2);
+        /* ReturnData checkBubble = BubbleSort.doBubbleSort (testData2);
         ReturnData checkSelection = SelectionSort.doSelectionSort (testData2);
         ReturnData checkInsertion = InsertionSort.doInsertionSort (testData2);
         ReturnData checkShell = ShellSort.doShellSort (testData2);
@@ -18,7 +20,12 @@ public class Test {
         checkBubble.showReturnData ();
         checkSelection.showReturnData ();
         checkInsertion.showReturnData ();
-        checkShell.showReturnData ();
+        checkShell.showReturnData (); */
+
+        Factorial fct = new Factorial();
+
+        System.out.println(fct.factorial(4));
+        System.out.println(fct.callBetterFactorial(4));
 
     }
 }
