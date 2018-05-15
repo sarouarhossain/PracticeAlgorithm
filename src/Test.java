@@ -2,6 +2,8 @@ import Algorithms.*;
 import Recursion.BasicRecursion;
 import Recursion.EuclidianGCD;
 import Recursion.Factorial;
+import Recursion.HaoreAlgorithm;
+import Recursion.TowerOfHanoi;
 
 /**
  * Created by sarou on 4/21/2018.
@@ -23,10 +25,17 @@ public class Test {
         checkInsertion.showReturnData ();
         checkShell.showReturnData (); */
 
-        EuclidianGCD gcd = new EuclidianGCD();
+        /*EuclidianGCD gcd = new EuclidianGCD();
 
         System.out.println(gcd.gcdRecursive(15,9));
-        System.out.println(gcd.gcdIterative(15,9));
+        System.out.println(gcd.gcdIterative(15,9));*/
+
+        /*TowerOfHanoi tower = new TowerOfHanoi();
+        tower.solveHanoi(10,'F','M', 'T');*/
+
+        int[] testArray = {1,5,4,8,-2,3};
+        HaoreAlgorithm haoreAlgorithm = new HaoreAlgorithm(testArray);
+        System.out.println(haoreAlgorithm.select(2));
 
     }
 }
